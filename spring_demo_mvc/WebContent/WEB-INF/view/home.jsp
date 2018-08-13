@@ -13,9 +13,13 @@
 	<h2>hello spring</h2>
 	
 	<a href="param/nameForm">Parameter Form</a>
+	<hr>
+	<a href="adventurer/showForm">Adventurer Form</a>
+	<hr>
 	
 	<img src="${pageContext.request.contextPath}/resources/images/spring.png">
 	
 	<input type="button" onclick="doSomeThing()" value="Click Me"/>
+	
 </body>
 </html>

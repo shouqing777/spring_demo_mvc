@@ -18,8 +18,8 @@ public class AdventurerController {
 	
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {	
-		Adventurer adventuer = new Adventurer();
-		model.addAttribute("adventurer",adventuer);	
+		Adventurer adventurer = new Adventurer();
+		model.addAttribute("adventurer",adventurer);	
 		return "adventurer-form";
 	}
 	

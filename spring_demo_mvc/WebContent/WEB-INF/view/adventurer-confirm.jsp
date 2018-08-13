@@ -5,8 +5,8 @@
 </head>
 <body>
 
-first name : ${Adventurer.firstName}
-last name : ${Adventurer.lastName}
+first name : ${adventurer.firstName}
+last name : ${adventurer.lastName}
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +6,18 @@
 </head>
 <body>
 
-	<form:form action="processForm" modelAttribute="Adventurer">
+	<form:form action="processForm" modelAttribute="adventurer">
 
-		First Name<form:input path="fistName" />
-		Last Name<form:input path="lastName" />
-		<input type="submit" value="submit" />
+
+		First Name: <form:input path="firstName"/>
+		<br>
+		Last Name: <form:input path="lastName"/>
+		<br>
+		<input type="submit" value="submit"/>
 
 	</form:form>
-	
+<body>
 </body>
 </html>
+
+
