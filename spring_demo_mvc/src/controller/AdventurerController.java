@@ -1,5 +1,9 @@
 package controller;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,10 +20,15 @@ import entity.Adventurer;
 @RequestMapping("/adventurer")
 public class AdventurerController {
 	
+	
+	@Value("#{races}")
+	private Map<String, String> races;
+	
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {	
 		Adventurer adventurer = new Adventurer();
-		model.addAttribute("adventurer",adventurer);	
+		model.addAttribute("adventurer",adventurer);
+		model.addAttribute("race", races);
 		return "adventurer-form";
 	}
 	
@@ -30,5 +39,5 @@ public class AdventurerController {
 		
 		return "adventurer-confirm";
 	}
-
+	
 }

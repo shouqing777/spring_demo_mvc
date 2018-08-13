@@ -1,4 +1,8 @@
 package entity;
+
+import java.util.LinkedHashMap;
+
+
 /**
 * @author shouqing E-mail:shouqing777@gmail.com
 * @version 創建時間：2018年8月13日 下午4:30:30
@@ -10,7 +14,21 @@ public class Adventurer {
 	
 	private String lastName;
 	
+	private String country;
+	
+	private String skill;
+	 
+	private LinkedHashMap<String, String> skills;
+	
+	private String race;
+	
 	public Adventurer() {
+		
+		this.skills = new LinkedHashMap<>();
+		
+		skills.put("fi","fight");
+		skills.put("ca","camp");
+		skills.put("co","cook");
 
 	}
 
@@ -28,6 +46,38 @@ public class Adventurer {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getSkill() {
+		return skill;
+	}
+
+	public void setSkill(String skill) {
+		this.skill = skill;
+	}
+
+	public LinkedHashMap<String, String> getSkills() {
+		return skills;
+	}
+
+	public void setSkills(LinkedHashMap<String, String> skills) {
+		this.skills = skills;
+	}
+
+	public String getRace() {
+		return race;
+	}
+
+	public void setRace(String race) {
+		this.race = race;
 	}
 
 }
