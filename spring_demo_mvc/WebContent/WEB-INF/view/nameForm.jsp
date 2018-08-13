@@ -21,5 +21,12 @@
 
 </form>
 
+<form action="getNameFormThree" method="get">
+
+	<input type="text" name="name" placeholder="what's your name(use binding)"/>
+	<input type="submit" name ="submit" value="submit">
+
+</form>
+
 </body>
 </html>

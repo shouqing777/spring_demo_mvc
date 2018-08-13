@@ -12,7 +12,7 @@
 <body>
 	<h2>hello spring</h2>
 	
-	<a href="nameForm">Parameter Form</a>
+	<a href="param/nameForm">Parameter Form</a>
 	
 	<img src="${pageContext.request.contextPath}/resources/images/spring.png">
 	
