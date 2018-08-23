@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 */
 
 @Controller
-@RequestMapping("param")
+@RequestMapping("/param")
 public class ParamController {
 	
 	@RequestMapping("nameForm")

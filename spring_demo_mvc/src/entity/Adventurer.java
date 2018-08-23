@@ -10,25 +10,22 @@ import java.util.LinkedHashMap;
 */
 public class Adventurer {
 	
-	private String firstName;
-	
+	private String firstName;	
 	private String lastName;
-	
 	private String country;
-	
 	private String skill;
-	 
 	private LinkedHashMap<String, String> skills;
-	
 	private String race;
+	private String weapon;
+	private String [] armor;
 	
 	public Adventurer() {
 		
 		this.skills = new LinkedHashMap<>();
 		
-		skills.put("fi","fight");
-		skills.put("ca","camp");
-		skills.put("co","cook");
+		skills.put("combo","combo");
+		skills.put("camp","camp");
+		skills.put("cock","cook");
 
 	}
 
@@ -80,4 +77,21 @@ public class Adventurer {
 		this.race = race;
 	}
 
+	public String getWeapon() {
+		return weapon;
+	}
+
+	public void setWeapon(String weapon) {
+		this.weapon = weapon;
+	}
+
+	public String[] getArmor() {
+		return armor;
+	}
+
+	public void setArmor(String[] armor) {
+		this.armor = armor;
+	}
+
+	
 }

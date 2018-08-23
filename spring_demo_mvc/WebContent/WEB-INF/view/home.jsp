@@ -16,6 +16,8 @@
 	<hr>
 	<a href="adventurer/showForm">Adventurer Form</a>
 	<hr>
+	<a href="customer/showForm">Customer Form</a>
+	<hr>
 	
 	<img src="${pageContext.request.contextPath}/resources/images/spring.png">
 	

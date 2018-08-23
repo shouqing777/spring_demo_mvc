@@ -1,6 +1,5 @@
 package controller;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -33,11 +32,11 @@ public class AdventurerController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("adventurer") Adventurer adventurer) {
+	public String processForm(@ModelAttribute("adventurer") Adventurer adventurer) {	
 		
 		System.out.println(adventurer.getFirstName() + " " +adventurer.getLastName());
 		
 		return "adventurer-confirm";
 	}
-	
 }
+	
