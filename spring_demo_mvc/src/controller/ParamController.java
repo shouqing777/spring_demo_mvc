@@ -28,8 +28,8 @@ public class ParamController {
 		return "getNameForm";
 	}
 	
-//	@RequestMapping("getNameFormTwo")
-	@GetMapping
+	@RequestMapping("getNameFormTwo")
+//	@GetMapping
 	public String getNameFormTwo(HttpServletRequest request , Model theModel) {
 		
 		String name = request.getParameter("name");

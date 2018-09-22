@@ -25,7 +25,7 @@ public class CustomerController {
 	
 	
 	@InitBinder
-	public void iniiBinder(WebDataBinder dataBinder){
+	public void initBinder(WebDataBinder dataBinder){
 		
 		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
 		
